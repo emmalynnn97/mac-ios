@@ -39,7 +39,11 @@ const Login = ({ }: LoginProps) => {
                 }} />
                 <span style={{ color: 'white',padding:'31px 0' }}>nami</span>
                     {inputEntered && <Redirect to='/desktop'/>}
-                <form onSubmit={()=>setInputEntered(!inputEntered)}>
+                <form onSubmit={
+                    
+                    (e)=>{setInputEntered(!inputEntered)
+                    e.preventDefault()
+                    }}>
                         <input 
                         onChange={handleChange}
                         style={{
