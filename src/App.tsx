@@ -1,17 +1,20 @@
 import './App.css';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import Desktop from './Desktop'
 import Login from './Login'
 import Nav from './Nav'
 const App = () => (
   <Router>
+    
     <Nav />
+    <Switch>
     <Route path="/desktop">
       <Desktop />
     </Route>
     <Route path="/">
       <Login />
     </Route>
+    </Switch>
   </Router>
 )
 
