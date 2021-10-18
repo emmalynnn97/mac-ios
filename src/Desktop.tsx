@@ -14,7 +14,7 @@ const Desktop = ({}: DesktopProps) => (
         <div style={{
             backgroundImage: `url(${bg})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: '50% 25%',
             minHeight: '100vh',
             height: '100vh',
             display: 'flex',
@@ -36,6 +36,7 @@ const Desktop = ({}: DesktopProps) => (
                 <Music/>
                 <Settings/>
             </div>
+            
         </div>
   
 )

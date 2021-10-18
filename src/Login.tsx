@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom'
 import { useState } from 'react'
 type LoginProps = {
 
-}
+} 
 
 const Login = ({ }: LoginProps) => {
     const [inputEntered, setInputEntered] = useState<boolean>(false)
