@@ -56,6 +56,7 @@ const Login = ({ }: LoginProps) => {
                             textAlign:'center',
                             padding:'11px 25px'
                         }}
+                        onClick={()=>setTextEntered("")}
                         value={textEntered}/>
                 </form>
             </div>
