@@ -9,7 +9,7 @@ const App = () => (
     <Route path="/desktop">
       <Desktop />
     </Route>
-    <Route path="/login">
+    <Route path="/">
       <Login />
     </Route>
   </Router>
