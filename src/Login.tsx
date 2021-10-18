@@ -1,13 +1,14 @@
 import React, { ReactElement } from 'react'
 
-interface LoginProps {
+type LoginProps = {
     
 }
 
-export default function Login({}: LoginProps) {
+const Login = ({}: LoginProps) => {
     return (
         <div>
-            
+            Login
         </div>
     )
 }
+export default Login
