@@ -3,3 +3,11 @@
   padding:0;
   margin:0;
 }
+.bottom-bar svg{
+    width:50px;
+    height:auto;
+}
+.bottom-bar a:hover > svg{
+  transform:scale(1.25);
+  transition:.25s ease-in-out;
+}
