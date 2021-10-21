@@ -11,7 +11,10 @@
   animation: fadeIn 3s;
   text-decoration:none;
 }
-
+.mail-btn:hover{
+  background:white;
+  color:rgba(0, 0, 0, 0.5) !important;
+}
 @keyframes fadeIn {
   from {
     opacity:0;

@@ -36,7 +36,7 @@ const Desktop = ({ }: DesktopProps) => {
             <span>dfd assets pack</span>
         </div>
         <ImagePopup isActive={imgPopupActive}/>
-        <FadeIn/>
+       
         <Toolbar />
 
     </div>)

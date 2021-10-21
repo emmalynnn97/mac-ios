@@ -2,12 +2,13 @@ import React, { ReactElement } from 'react'
 import { ReactComponent as Mail } from './Mail.svg'
 
 interface Props {
-    
+    isOpen?: boolean
 }
 
-const FadeIn = ({}: Props) => {
+const FadeIn = ({isOpen = true}: Props) => {
     return (
         <a href="#" className='slide-in' style={{
+            display: isOpen ? 'block' : 'none',
             width:275,
             height:85,
             background:'rgba(255,255,255,.1)',
@@ -16,7 +17,8 @@ const FadeIn = ({}: Props) => {
             right:10,
             boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.16)',
             border:'.5px inset rgba(255, 255, 255, 0.26)',
-            borderRadius:12
+            borderRadius:12,
+            zIndex:1
 
         }}>
             <div>
