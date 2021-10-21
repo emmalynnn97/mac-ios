@@ -25,10 +25,10 @@ const Toolbar = ({ }: Props) => (
         <a href='https://open.spotify.com/artist/5wIkfOCGLMGSeYTC0F9gdq?si=B6-6OApdSAW4twAZCeIwdQ&nd=1'>
             <Spotify />
         </a>
-        <Music />
+        <a><Music /></a>
         <a href='https://www.instagram.com/namiondas/?hl=en'><Instagram /></a>
-        <Notes />
-        <Mail />
+        <a><Notes /></a>
+        <a><Mail /></a>
     </div>
 )
 export default Toolbar
