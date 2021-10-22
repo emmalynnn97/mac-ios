@@ -32,7 +32,7 @@ const Toolbar = ({ }: Props) => {
         </a>
         <a><Music /></a>
         <a target="_blank" href='https://www.instagram.com/namiondas/?hl=en'><Instagram /></a>
-        <a><Notes /></a>
+        <a target="_blank" href="https://genius.com/albums/Nami/Demos-for-drake"><Notes /></a>
         <a style={{cursor:'pointer'}}><Mail onClick={()=>setOpenMail(!openMail)}/></a>
         
     </div>
