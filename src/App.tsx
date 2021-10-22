@@ -8,7 +8,7 @@ const App = () => (
     
     <Nav />
     <Switch>
-    <Route path="/desktop">
+    <Route path="/home">
       <Desktop />
     </Route>
     <Route path="/">

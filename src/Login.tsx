@@ -38,7 +38,7 @@ const Login = ({ }: LoginProps) => {
                     width: 125,
                 }} />
                 <span style={{ color: 'white',padding:'31px 0' }}>nami</span>
-                    {inputEntered && <Redirect to='/desktop'/>}
+                    {inputEntered && <Redirect to='/home'/>}
                 <form onSubmit={
                     
                     (e)=>{setInputEntered(!inputEntered)
