@@ -42,6 +42,7 @@ const Login = ({ }: LoginProps) => {
                 <form onSubmit={
                     
                     (e)=>{setInputEntered(!inputEntered)
+                        window.scrollTo(0,0)
                     e.preventDefault()
                     }}>
                         <input 
@@ -54,7 +55,8 @@ const Login = ({ }: LoginProps) => {
                             justifyContent:'center',
                             alignItems:'center',
                             textAlign:'center',
-                            padding:'11px 25px'
+                            padding:'11px 25px',
+                            fontSize:16,
                         }}
                         onClick={()=>setTextEntered("")}
                         value={textEntered}/>
