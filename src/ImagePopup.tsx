@@ -30,7 +30,7 @@ const ImagePopup = ({isActive}: Props) => {
             alignItems: 'flex-start',
             zIndex:3
         }}>
-            <div className='popup-container' style={{ height: '80%', width: '90%', background: 'rgb(30,30,30)', position: 'relative', top: 50 }}>
+            <div className='popup-container' style={{ height: '100%', width: '90%', background: 'rgb(30,30,30)', position: 'relative', top: 50 }}>
                 <img style={{width:'100%'}} src={header}/>
                     <Gallery onClick={openLightbox} targetRowHeight={200} photos={photos}/>
                     <ModalGateway>
