@@ -19,7 +19,7 @@ const Toolbar = ({ }: Props) => {
         backgroundColor: 'rgba(255, 255, 255, 0.1)', 
         width: 'auto', height: 75, 
         position: 'absolute', 
-        bottom: 50, 
+        bottom: 0, 
         display: 'flex', 
         justifyContent: 'center', 
         alignItems: 'center', 
@@ -27,11 +27,11 @@ const Toolbar = ({ }: Props) => {
         borderRadius:16,
         backdropFilter:'blur(96px)',
     }}>
-        <a href='https://open.spotify.com/artist/5wIkfOCGLMGSeYTC0F9gdq?si=B6-6OApdSAW4twAZCeIwdQ&nd=1'>
+        <a target="_blank" href='https://open.spotify.com/artist/5wIkfOCGLMGSeYTC0F9gdq?si=B6-6OApdSAW4twAZCeIwdQ&nd=1'>
             <Spotify />
         </a>
         <a><Music /></a>
-        <a href='https://www.instagram.com/namiondas/?hl=en'><Instagram /></a>
+        <a target="_blank" href='https://www.instagram.com/namiondas/?hl=en'><Instagram /></a>
         <a><Notes /></a>
         <a style={{cursor:'pointer'}}><Mail onClick={()=>setOpenMail(!openMail)}/></a>
         

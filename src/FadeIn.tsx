@@ -7,7 +7,7 @@ interface Props {
 
 const FadeIn = ({isOpen = true}: Props) => {
     return (
-        <a href="#" className='slide-in' style={{
+        <a target="_blank" href="https://www.dropbox.com/sh/cl56rit5qr25jfb/AACW7t7o5U5vJmGVpKnkgfhIa?dl=0" className='slide-in' style={{
             display: isOpen ? 'block' : 'none',
             width:275,
             height:85,

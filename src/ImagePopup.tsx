@@ -8,17 +8,18 @@ const ImagePopup = ({isActive}: Props) => {
     let display = isActive ? 'flex' : 'none'
     return (
       
-        <div style={{
+        <div className='image-popup-modal' style={{
             position: 'absolute',
             width: '100%',
             height: '100%',
             display: display,
             justifyContent: 'center',
-            alignItems: 'flex-start'
+            alignItems: 'flex-start',
+            zIndex:3
         }}>
-            <div style={{ height: '75%', width: '90%', background: 'rgb(30,30,30)', position: 'relative', top: 50 }}>
+            <div className='popup-container' style={{ height: '80%', width: '90%', background: 'rgb(30,30,30)', position: 'relative', top: 50 }}>
                 <img style={{width:'100%'}} src={header}/>
-                    <Gallery columns={5} targetRowHeight={150} photos={photos}/>
+                    <Gallery targetRowHeight={200} photos={photos}/>
             </div>
         </div>
         
