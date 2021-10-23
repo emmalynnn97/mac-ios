@@ -1,13 +1,13 @@
 import React, { useState, useCallback } from "react"
 import header from './Header.png'
 import Gallery from 'react-photo-gallery'
-import {photos} from './photos'
 import Carousel, { Modal, ModalGateway } from "react-images";
-import type {ViewType} from 'react-images'
+
 interface Props {
     isActive?: boolean
+    photos?: any
 }
-const ImagePopup = ({isActive}: Props) => {
+const ImagePopup = ({isActive, photos}: Props) => {
     let display = isActive ? 'flex' : 'none'
     const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -38,7 +38,7 @@ const ImagePopup = ({isActive}: Props) => {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={photos.map((x: { src: any; }) => ({
                 ...x,
                 srcset: x.src
               })) as any}
