@@ -15,6 +15,9 @@
   background:white;
   color:rgba(0, 0, 0, 0.5) !important;
 }
+a{
+  text-decoration:none;
+}
 body{
   height:100vh;
   background:url('./bg.png');

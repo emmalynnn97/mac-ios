@@ -4,7 +4,7 @@ import { ReactComponent as Folder } from './Folder.svg'
 import Toolbar from './Toolbar'
 
 import {photos} from './photos'
-import {photos2} from './photos2'
+
 import ImagePopup from './ImagePopup'
 
 type DesktopProps = {
@@ -24,12 +24,6 @@ const Desktop = ({ }: DesktopProps) => {
          if((e.target as Element).childElementCount === 5){
             setImgPopupActive(false)
          }
-         if((e.target as Element).className === 'image-popup-modal'){
-            setImgPopupActive2(false)
-         }
-         if((e.target as Element).childElementCount === 5){
-            setImgPopupActive2(false)
-         }  
         })
     },[])
     return(
@@ -41,20 +35,20 @@ const Desktop = ({ }: DesktopProps) => {
         alignItems: 'center'
         
     }}>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white', position: 'relative', top: -130, left:0 }}>
+        <a href="https://namiondas.lnk.to/DFD" target="_blank" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white', position: 'relative', top: -130, left:0 }}>
             <Folder />
             <span>music</span>
-        </div>
+        </a>
         <div className='folder' onClick={()=>setImgPopupActive(!imgPopupActive)} style={{ cursor:'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white' }}>
             <Folder />
-            <span>Photos</span>
+            <span>Moodboard</span>
         </div>
-        <div className='folder' onClick={()=>setImgPopupActive2(!imgPopupActive2)} style={{ cursor:'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white', position:'relative',left:17, top:140}}>
+        <a target="_blank" href='https://www.dropbox.com/sh/7i2p53sot5pi87x/AAD-xoTM9z0qYe1JOaDAIyvba?dl=0' className='folder' style={{ cursor:'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white', position:'relative',left:17, top:140}}>
             <Folder />
             <span>dfd assets pack</span>
-        </div>
+        </a>
         <ImagePopup photos={photos} isActive={imgPopupActive}/>
-        <ImagePopup photos={photos2} isActive={imgPopupActive2}/>
+        
        
         <Toolbar />
 
