@@ -30,7 +30,7 @@ const Toolbar = ({ }: Props) => {
         <a target="_blank" href='https://open.spotify.com/artist/5wIkfOCGLMGSeYTC0F9gdq?si=B6-6OApdSAW4twAZCeIwdQ&nd=1'>
             <Spotify />
         </a>
-        <a><Music /></a>
+        <a target="_blank" href="https://music.apple.com/us/album/1589105147?app=music&at=1l3vpUI&lId=24258456&cId=none&sr=1&src=Linkfire&itscg=30440&itsct=catchall_p1&ct=LFV_29404a8a9623519c38da66639cadc1ec&ls=1"><Music /></a>
         <a target="_blank" href='https://www.instagram.com/namiondas/?hl=en'><Instagram /></a>
         <a target="_blank" href="https://genius.com/albums/Nami/Demos-for-drake"><Notes /></a>
         <a style={{cursor:'pointer'}}><Mail onClick={()=>setOpenMail(!openMail)}/></a>

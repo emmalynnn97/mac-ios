@@ -41,7 +41,7 @@ const Desktop = ({ }: DesktopProps) => {
         </a>
         <div className='folder' onClick={()=>setImgPopupActive(!imgPopupActive)} style={{ cursor:'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white' }}>
             <Folder />
-            <span>Moodboard</span>
+            <span>moodboard</span>
         </div>
         <a target="_blank" href='https://www.dropbox.com/sh/7i2p53sot5pi87x/AAD-xoTM9z0qYe1JOaDAIyvba?dl=0' className='folder' style={{ cursor:'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white', position:'relative',left:17, top:140}}>
             <Folder />
