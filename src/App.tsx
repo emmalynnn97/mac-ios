@@ -8,11 +8,8 @@ const App = () => (
     
     <Nav />
     <Switch>
-    <Route path="/home">
-      <Desktop />
-    </Route>
     <Route path="/">
-      <Login />
+      <Desktop />
     </Route>
     </Switch>
   </Router>
